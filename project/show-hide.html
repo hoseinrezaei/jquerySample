@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/child.css">
+</head>
+<body >
+  <h1 class="white-text">نمایش یا مخفی کردن المان ها</h1>
+  <p>
+    در این پروژه با استفاده از دکمه ها میخواهیم یک عکس را مخفی کنیم یا نمایش دهیم.
+  </p>
+  <hr>
+  <div >
+    <button id="btnHide" class="button">مخفی کن</button>
+    <button id="btnShow" class="button">نمایش بده</button>
+    <button id="btntoggle" class="button">مخفی کن / نمایش بده</button>
+  </div>
+
+  <div class="div-center">
+    <img src="../img/a2.jpg" alt="pic1" id="pic1" class="img">
+  </div>
+
+</body>
+
+<script src="../jquery/jquery.min.js"></script>
+
+<script >
+  $(document).ready(function(){
+
+    $("#btnHide").click(function(){
+      $("#pic1").hide();
+    });
+
+    $("#btnShow").click(function(){
+      $("#pic1").show();
+    });
+
+    $("#btntoggle").click(function(){
+      $("#pic1").toggle();
+    });
+
+  });
+
+</script>
+
+</html>

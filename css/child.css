@@ -1,0 +1,74 @@
+@font-face {
+  font-family: WebYekan;
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/WebYekan.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/WebYekan.ttf')  format('truetype');
+}
+
+body {
+  font-family: WebYekan;
+  background-color: #22A7F0;
+  color: white;
+  direction: rtl;
+}
+
+.img{
+  height: 300px;
+  width: 500px;
+  padding-top: 20px;
+}
+
+
+.div-center{
+  
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 400px;
+}
+
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.slide {
+  display: none;
+}
+
+.el:hover {
+  cursor: pointer;
+}
+
+.vline{
+  border-left: 6px solid white;
+  height: 125px;
+  padding-left: 50px;
+  float: left;
+}
+.end-text{
+  height: 125px;
+  padding-left: 50px;
+  float: left;
+}
+
+.option{
+  float: left;
+  margin-left: 150px
+}
+
+.up{
+  transform: rotate(90deg);
+}
+.down{
+  transform: rotate(270deg);
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/child.css">
+</head>
+<body >
+  <h1 class="white-text">نمایش اطلاعات بر روی تایم لاین</h1>
+  <div class="option">
+    <p class="up">></p>
+    <br>
+    <br>
+    <ul>
+      <li id="el1">-500 قبل از میلاد</li>
+      <li id="el2">880 شمسی میلادی</li>
+      <li id="el3">1161 شمسی میلادی</li>
+      <li id="el4">1304 شمسی میلادی</li>
+    </ul>
+    <br>
+    <br>
+    <p class="down">></p>
+  </div>
+  <div class="vline" id="vline2">
+    <div>
+      start
+    </div>
+  </div>
+  <div class="end-text">
+    end
+  </div>
+
+  <div class="timeline-container timeline-theme-1">
+    <div class="timeline js-timeline">
+      <div id="1">
+          <img src="../img/h.jpg" alt="pic1" id="pic1" class="img">
+          <h3>هخامنشیان</h3>
+          <h5>500 سال قبل از میلاد</h5>
+          <p>هخامنشیان خیلی بر ایران حکومت کردند.</p>
+      </div>
+
+      <div id="2">
+          <img src="../img/s.jpg" alt="pic1" id="pic1" class="img">
+          <h3>سلجوقیان</h3>
+          <h5>880 شمسی</h5>
+          <p>اینها هم در دورانی بر ایران حکومت میکردند</p>
+      </div>
+
+      <div id="3">
+          <img src="../img/gh.jpg" alt="pic1" id="pic1" class="img">
+          <h3>قاجاریان</h3>
+          <h5>1161 شمسی</h5>
+          <p>قاجاریان زیبا ترین دختران تاریخ را داشتند. مدیونی اگه باور نکنی</p>
+      </div>
+
+      <div id="4">
+          <img src="../img/p.jpg" alt="pic1" id="pic1" class="img">
+          <h3>پهلوی</h3>
+          <h5>1304 شمسی</h5>
+          <p>بد بختارو پرتشون کردن بیرون از کشورشون</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<script src="../jquery/jquery.min.js"></script>
+<script >
+  $(document).ready(function(){
+    $("#2").hide();
+    $("#3").hide();
+    $("#4").hide();
+
+    $("#el1").click(function(){
+      $("#1").show(1000);
+      $("#2").hide();
+      $("#3").hide();
+      $("#4").hide();
+      $("#vline2").animate({
+        height: '125px'
+      });
+
+    });
+
+    $("#el2").click(function(){
+      $("#1").hide();
+      $("#2").show(1000);
+      $("#3").hide();
+      $("#4").hide();
+      $("#vline2").animate({
+        height: '250px'
+      });
+    });
+
+    $("#el3").click(function(){
+      $("#1").hide();
+      $("#2").hide();
+      $("#3").show(1000);
+      $("#4").hide();
+      $("#vline2").animate({
+        height: '375px'
+      });
+    });
+
+    $("#el4").click(function(){
+      $("#1").hide();
+      $("#2").hide();
+      $("#3").hide();
+      $("#4").show(1000);
+      $("#vline2").animate({
+        height: '500px'
+      });
+    });
+
+  });
+
+</script>
+
+</html>

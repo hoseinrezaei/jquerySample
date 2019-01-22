@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/quizstyle.css">
+</head>
+<body >
+  <h1 class="title">علم خودت رو محک بزن!</h1>
+  <div class="card">
+    <div class="center">
+      <h3 id="questionNumber"></h3>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+      <br>
+      <div id="pic"></div>
+      <h3 id="questionArea" >متن سوال</h3>
+      <div id="radiogroup">
+        <input type="radio" id="radiovalue1" name="quiz" class="radioClass">
+        <label for="radio1">گزینه 1</label>
+
+        <input type="radio" id="radiovalue2" name="quiz" class="radioClass">
+        <label for="radio2">گزینه 2</label>
+        <br>
+        <input type="radio" id="radiovalue3" name="quiz" class="radioClass">
+        <label for="radio3">گزینه 3</label>
+
+        <input type="radio" id="radiovalue4" name="quiz" class="radioClass">
+        <label for="radio4">گزینه 4</label>
+      </div>
+      <div >
+        <button type="button" class="button" id="nextbtn">سوال بعدی</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../jquery/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $.getJSON('../quiz-question.json',function(data){
+    var i=0,j,currectAnswerChek,trueAnswer=0,bar=20;
+    var questionNumber=[], question=[], radio1=[], radio2=[], radio3=[], radio4=[], img=[];
+    var answer=[];
+    $.each(data, function(key,val){
+      questionNumber[i]=val.nember;
+      question[i]=val.question;
+      radio1[i]=val.option1;
+      radio2[i]=val.option2;
+      radio3[i]=val.option3;
+      radio4[i]=val.option4;
+      img[i]=val.img;
+      answer[i]=val.answer;
+      i++;
+    });
+    i=0;
+    $('#questionNumber').html( "سوال شماره : " + questionNumber[i]);
+    $('#questionArea').html(question[i]);
+    $('label[for=radio1]').html(radio1[i]);
+    $('label[for=radio2]').html(radio2[i]);
+    $('label[for=radio3]').html(radio3[i]);
+    $('label[for=radio4]').html(radio4[i]);
+    $('#pic').html('<img src=".'+img[i]+ '" alt="pic1"  class="img">');
+    i++;
+    $('#nextbtn').click(
+    function(){
+      currectAnswerChek=$("input[id=radiovalue"+answer[i-1]+"]:checked");
+
+      if (i<10 && i>=0) {
+        if (currectAnswerChek.val()=="on") {
+          trueAnswer++;
+        }
+
+      $('#questionNumber').html( "سوال شماره : " + questionNumber[i]);
+      $('#questionArea').html(question[i]);
+      $('label[for=radio1]').html(radio1[i]);
+      $('label[for=radio2]').html(radio2[i]);
+      $('label[for=radio3]').html(radio3[i]);
+      $('label[for=radio4]').html(radio4[i]);
+      $('#pic').html('<img src=".'+img[i]+ '" alt="pic1"  class="img">');
+      $("#myBar").css("width",bar+"%");
+      bar+=10;
+      i++;
+
+      if (i==10) {
+        $('#nextbtn').html("نتیجه");
+        if (currectAnswerChek.val()=="on") {
+          trueAnswer++;
+        }
+        i++;
+        }
+      }
+      else if(i==11) {
+      if (currectAnswerChek.val()=="on") {
+        trueAnswer++;
+      }
+      $('#questionNumber').html("تعداد پاسخ صحیح شما");
+      $('#questionArea').html("پاسخ صحیح : "+ trueAnswer);
+      $('label[for=radio1]').hide();
+      $('label[for=radio2]').hide();
+      $('label[for=radio3]').hide();
+      $('label[for=radio4]').hide();
+      $('#nextbtn').hide();
+      $('#radiogroup').hide();
+      $('#pic').hide();
+      }
+    });
+  });
+});
+
+</script>
+</html>

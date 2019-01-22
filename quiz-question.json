@@ -1,0 +1,102 @@
+[
+   {
+    "nember":1,
+    "img":"./img/q1.jpg",
+    "question":"نام شهری که در عکس مشاهده میکنید چیست ؟",
+    "option1":"تهران",
+    "option2":"شهریار",
+    "option3":"سیدنی",
+    "option4":"بردآباد",
+    "answer":3
+	},
+    {
+	"nember":2,
+    "img":"./img/q2.jpg",
+    "question":"بوفون در کدام تیم ملی بازی میکرد؟",
+    "option1":"تیم ملی مغولستان",
+    "option2":"تیم ملی فرانسه",
+    "option3":"تیم ملی اسپانیا",
+    "option4":"تیم ملی ایتالیا",
+    "answer":4
+	},
+    {
+	"nember":3,
+    "img":"./img/q3.jpg",
+    "question":"این بزرگوار کیست ؟",
+    "option1":"لاما",
+    "option2":"کفتار",
+    "option3":"بز آفریقایی",
+    "option4":"یوتا",
+    "answer":1
+	},
+    {
+	"nember":4,
+    "img":"./img/q4.jpg",
+    "question":"قله دماوند در کدام استان قرار دارد ؟",
+    "option1":"مازندران",
+    "option2":"تهران",
+    "option3":"گیلان",
+    "option4":"سمنان",
+    "answer":1
+	},
+    {
+	"nember":5,
+    "img":"./img/q5.jpg",
+    "question":"برج ایفل در کدام شهر است ؟",
+    "option1":"مسکو",
+    "option2":"پاریس",
+    "option3":"فرانسه",
+    "option4":"مادرید",
+    "answer":2
+	},
+    {
+	"nember":6,
+    "img":"./img/q6.jpg",
+    "question":"شرکت سازنده بازی خدای جنگ کدام گزینه است ؟",
+    "option1":"یوبی سافت",
+    "option2":"راک استار",
+    "option3":"سونی",
+    "option4":"ای اِی گیم",
+    "answer":1
+	},
+    {
+	"nember":7,
+    "img":"./img/q7.jpg",
+    "question":"ماشین موجود در عکس کدام نسخه از لامبورگینی است؟",
+    "option1":"گالاردو",
+    "option2":"وننو",
+    "option3":"اسپادا",
+    "option4":"اوراکان",
+    "answer":2
+	},
+    {
+	"nember":8,
+    "img":"./img/q8.jpg",
+    "question":"معروف ترین سنگ فیروزه متعلق به کدام یک از گرینه های زیر است ؟",
+    "option1":"مشهد",
+    "option2":"چین",
+    "option3":"آفریقا",
+    "option4":"نیشابور",
+    "answer":4
+	},
+    {
+	"nember":9,
+    "img":"./img/q9.jpg",
+    "question":"چنگیزخان مغول در کدام کشور به دنیا آمد ؟",
+    "option1":"مغولستان",
+    "option2":"چین",
+    "option3":"قزاقستان",
+    "option4":"کره شمالی",
+    "answer":1
+	},
+    {
+	"nember":10,
+    "img":"./img/q10.jpg",
+    "question":"میانگین سرعت اسب چند کیلومتر است ؟",
+    "option1":"10-20",
+    "option2":"20-30",
+    "option3":"30-40",
+    "option4":"40-50",
+    "answer":4
+	}
+]

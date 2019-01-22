@@ -1,0 +1,63 @@
+@font-face {
+  font-family: WebYekan;
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/WebYekan.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/WebYekan.ttf')  format('truetype');
+}
+
+body {
+  font-family: WebYekan;
+  background-color: #27ae60;
+  color: white;
+  direction: rtl;
+}
+
+#myProgress {
+  width: 90%;
+  background-color: #D0ECE7;
+  direction: ltr;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #3498DB;
+}
+
+.center{
+  text-align: center;
+}
+
+.button {
+  background-color: #3498DB;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: WebYekan
+}
+.button:hover {
+  background-color: #5DADE2;
+  color: white;
+  cursor: pointer;
+}
+.card{
+  background-color: white;
+  width: 55%;
+  color: black;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+.radioClass{
+  margin: 15px;
+}
+.title{
+  position: absolute;
+}
